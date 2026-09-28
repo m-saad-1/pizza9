@@ -446,7 +446,7 @@ window.dispatchOrder = function(orderId) {
         }
         
         window.Store.notify();
-        showToast(`Order #${orderId} dispatched with ${rider.name}`, "success");
+        showToast(`Order #${orderId} out for delivery with ${rider.name}`, "success");
     }
 };
 

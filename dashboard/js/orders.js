@@ -642,9 +642,9 @@ window.confirmDispatch = function(orderId) {
         return;
     }
     
-    window.Store.updateOrderStatus(orderId, 'Dispatched');
+    window.Store.updateOrderStatus(orderId, 'Out for Delivery');
     closeDispatchModal();
-    showNotification('Order Dispatched', 'Order #' + orderId + ' is Dispatched. Waiting for rider ' + riderSelect.options[riderSelect.selectedIndex].text.split(' (')[0] + ' to pick it up.', 'success');
+    showNotification('Order Out for Delivery', 'Order #' + orderId + ' is Out for Delivery. Rider ' + riderSelect.options[riderSelect.selectedIndex].text.split(' (')[0] + ' is on the way.', 'success');
 };
 
 window.openOrderDetailModal = window.openOrderDrawer;
